@@ -1,1 +1,5 @@
-Use `yarn serve` or `npm serve` to run development mode. `yarn build` or `npm run build` to build app in `./dist` directory.
+Demo [link](https://liptun-midi.herokuapp.com/)
+
+# MIDI app
+
+Connect midi devices to web browser
