@@ -5,13 +5,13 @@ import './icons.font'
 
 import './styles/reset.scss'
 
-import Router from './Router'
+import App from './App'
 import configureStore from './store'
 const store = configureStore()
 
 const appRoot = (
     <Provider store={store}>
-        <Router />
+        <App />
     </Provider>
 )
 

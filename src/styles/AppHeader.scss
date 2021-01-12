@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+.app {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background-color: $color-primary;
+    }
+    &__brand {
+        i {
+            font-size: 2.1em;
+        }
+    }
+    &__navbar {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 15px;
+        li {
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

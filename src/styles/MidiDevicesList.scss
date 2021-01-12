@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.midi-devices-list {
+    small {
+        font-size: 0.6em;
+        opacity: 0.5;
+    }
+    &__fetching {
+    }
+    &__null {
+        text-align: center;
+    }
+    &__error {
+        color: red;
+    }
+    &__table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        margin: 50px;
+    }
+    &__column {
+        display: grid;
+        grid-gap: 5px;
+        h2 {
+            font-size: 1.4em;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-primary;
+            margin-bottom: 10px;
+        }
+    }
+    &__item {
+        background-color: rgba(white, 0.2);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: none;
+            border: 0;
+            text-align: center;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            cursor: pointer;
+            i {
+                color: white;
+                font-size: 2em;
+            }
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+        &__text {
+            display: grid;
+            grid-gap: 5px;
+        }
+        &__name {
+        }
+        &__manufacturer {
+            opacity: 0.5;
+            font-size: 0.8em;
+        }
+    }
+}
