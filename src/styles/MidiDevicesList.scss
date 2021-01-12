@@ -53,6 +53,9 @@
             &:hover {
                 background-color: $color-primary;
             }
+            &.active {
+                background-color: $color-secondary;
+            }
         }
         &__text {
             display: grid;

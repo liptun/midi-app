@@ -11,3 +11,8 @@ export const devicesError = (error) => ({
     type: 'DEVICES_ERROR',
     error,
 })
+
+export const inputDeviceSet = (device) => ({
+    type: 'INPUT_DEVICE_SET',
+    device,
+})

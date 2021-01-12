@@ -3,6 +3,8 @@ const defaultState = {
     inputs: [],
     outputs: [],
     error: '',
+    activeInput: null,
+    activeOutput: null,
 }
 
 const mapDevice = (device) => ({
@@ -34,6 +36,11 @@ export default (state = defaultState, action) => {
                 fetchingDevices: false,
                 inputs: action.payload.inputs.map(mapDevice),
                 outputs: action.payload.outputs.map(mapDevice),
+            }
+        case 'INPUT_DEVICE_SET':
+            return {
+                ...state,
+                activeInput: action.device,
             }
         default:
             return state
